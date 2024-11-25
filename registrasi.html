@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f8f8f8;
+    }
+
+    .register-container {
+      display: flex;
+      width: 900px;
+      max-width: 100%;
+      height: 500px;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 1s ease-in-out;
+      background-color: #fff;
+    }
+
+    /* Bagian kiri */
+    .register-left {
+      flex: 1;
+      background-color: rgba(54, 147, 97, 1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      padding: 20px;
+    }
+
+    .register-left img {
+      width: 60%;
+      height: auto;
+      animation: pulse 2s infinite;
+    }
+
+    /* Bagian kanan */
+    .register-right {
+      flex: 1;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .register-right h2 {
+      font-weight: 600;
+      margin-bottom: 20px;
+      color: rgba(54, 147, 97, 1);
+      text-align: left;
+      font-size: 2rem;
+    }
+
+    .register-right .form-group {
+      margin-bottom: 15px;
+    }
+
+    .register-right input {
+      width: 100%;
+      padding: 12px;
+      border: 2px solid rgba(54, 147, 97, 1);
+      border-radius: 8px;
+      font-size: 16px;
+      outline: none;
+      transition: border-color 0.3s ease;
+    }
+
+    .register-right input:focus {
+      border-color: #3c8359;
+      box-shadow: 0 0 8px rgba(54, 147, 97, 0.3);
+    }
+
+    .register-right .form-text {
+      font-size: 14px;
+      margin-top: 8px;
+      text-align: center;
+    }
+
+    .register-right .form-text a {
+      color: rgba(54, 147, 97, 1);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .register-right .form-text a:hover {
+      text-decoration: underline;
+    }
+
+    .register-right button {
+      width: 100%;
+      padding: 12px;
+      background-color: rgba(54, 147, 97, 1);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 15px;
+      font-weight: 600;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .register-right button:hover {
+      background-color: #3c8359;
+      transform: translateY(-2px);
+    }
+
+    /* Animasi */
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.05);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="register-container">
+    <!-- Bagian kiri -->
+    <div class="register-left">
+      <img src="adakita.png" alt="AdaKITA Logo">
+    </div>
+    <!-- Bagian kanan -->
+    <div class="register-right">
+      <h2>REGISTER</h2>
+      <div class="form-group">
+        <input type="email" placeholder="Masukkan Email">
+      </div>
+      <div class="form-group">
+        <input type="text" placeholder="Masukkan Username">
+      </div>
+      <div class="form-group">
+        <input type="password" placeholder="Masukkan Password">
+      </div>
+      <div class="form-group">
+        <input type="password" placeholder="Konfirmasi Password">
+      </div>
+      <div class="form-text">
+        Sudah punya akun? <a href="login.html">Login disini</a>
+      </div>
+      <button type="button">REGISTRASI</button>
+    </div>
+  </div>
+</body>
+</html>
